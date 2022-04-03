@@ -7,10 +7,7 @@ const Review = (props) => {
         <div>
             <div className="p-12 m-3 rounded border-2">
                 <p className="text-gray-600 tracking-wide">" {description} "</p>
-                <span>
-                    {rating}
-                    <AiFillStar />
-                </span>
+                <p className="text-violet-600 my-3">Rating: {rating}</p>
                 <p className="font-bold tracking-wider text-lg">- {name}</p>
             </div>
         </div>

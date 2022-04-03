@@ -26,12 +26,6 @@ const Header = () => {
                 >
                     Blogs
                 </Link>
-                <Link
-                    className=" px-4 py-3 hover:bg-white duration-200"
-                    to="/about"
-                >
-                    About
-                </Link>
             </nav>
         </div>
     );
