@@ -1,31 +1,50 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <div className="sticky top-0">
             <nav className="flex bg-gray-200 justify-center">
-                <Link className=" px-4 py-3 hover:bg-white duration-200" to="/">
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive
+                            ? "bg-white px-4 py-3"
+                            : "bg-gray-200 px-4 py-3"
+                    }
+                    to="/"
+                >
                     Home
-                </Link>
-                <Link
-                    className=" px-4 py-3 hover:bg-white duration-200"
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive
+                            ? "bg-white px-4 py-3"
+                            : "bg-gray-200 px-4 py-3"
+                    }
                     to="/reviews"
                 >
                     Reviews
-                </Link>
-                <Link
-                    className=" px-4 py-3 hover:bg-white duration-200"
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive
+                            ? "bg-white px-4 py-3"
+                            : "bg-gray-200 px-4 py-3"
+                    }
                     to="/dashboard"
                 >
                     Dashboard
-                </Link>
-                <Link
-                    className=" px-4 py-3 hover:bg-white duration-200"
+                </NavLink>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive
+                            ? "bg-white px-4 py-3"
+                            : "bg-gray-200 px-4 py-3"
+                    }
                     to="/blogs"
                 >
                     Blogs
-                </Link>
+                </NavLink>
             </nav>
         </div>
     );

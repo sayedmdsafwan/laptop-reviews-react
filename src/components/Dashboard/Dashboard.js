@@ -52,7 +52,7 @@ const Dashboard = () => {
 
     return (
         <div className="w-4/5 mx-auto py-8">
-            <div className="flex">
+            <div className="lg:flex">
                 <div>
                     <h1>Dashboard</h1>
                     <LineChart
