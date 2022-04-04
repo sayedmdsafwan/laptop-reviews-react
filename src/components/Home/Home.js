@@ -4,7 +4,7 @@ import useReviews from "../../hooks/useReviews";
 import Review from "../Review/Review";
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
 
     return (
         <div className="w-4/5 mx-auto">
@@ -15,13 +15,16 @@ const Home = () => {
                         See all reviews about our dell laptop
                     </h1>
                     <p className="tracking-wide my-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Totam tempora illum consequuntur, accusamus neque
-                        aliquam officia perspiciatis ab porro nobis.
+                        This is our laptop. We provide latest generation laptop
+                        with core i5 12th generation with 16gb of ram and 1 tb
+                        of ssd. also it supports wifi 6 and bluetooth 5.0.
                     </p>
-                    <button className="px-6 py-2 uppercase my-4 tracking-wider rounded bg-slate-200 duration-200 hover:bg-black hover:text-white">
-                        click
-                    </button>
+                    <Link
+                        to="/dashboard"
+                        className="px-6 py-2 uppercase my-4 tracking-wider rounded bg-slate-200 duration-200 hover:bg-black hover:text-white"
+                    >
+                        Go To Dashboard
+                    </Link>
                 </div>
                 <div>
                     <img src={image} alt="" />
